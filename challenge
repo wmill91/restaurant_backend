@@ -1,0 +1,27 @@
+var challenge = new Challene();
+console.log(req.body.place)
+challenge.points = req.body.points;
+challenge.desciption = req.body.description;
+challenge.lat=req.body.lat;
+challenge.long=req.body.long;
+
+
+console.log(challenge);
+
+var camera = new camera();
+camera={
+	"model":"nikon",
+	"make":"blah"
+};
+	camera.save(function(err){
+	console.log(challenge)
+	if (err)
+	re.send(err);
+
+	res.json({message:"chalenge created!"})
+	});
+});
+
+app.delete('/api/chalenges', function(req,res){
+	
+})

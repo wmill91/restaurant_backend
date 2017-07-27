@@ -1,0 +1,8 @@
+Todo.find(function(err,todos){
+	console.log(todos);s
+});
+
+Todo.save(function(err){
+res.json(200, todo);
+	
+});
